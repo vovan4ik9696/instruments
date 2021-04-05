@@ -1,0 +1,122 @@
+.delivery {
+  padding: 85px 0 45px;
+
+  &__title {
+    margin-bottom: 35px;
+    
+    @extend %osw-500;
+    
+    h2 {
+      max-width: 455px;
+      font-size: 30px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    border: 1px solid #E5E5E5;
+
+    &--big {
+      max-width: 586px;
+      padding: 32px;
+      margin-bottom: 28px;
+    }
+
+    &--small {
+      position: relative;
+
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 60px 42px;
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        left: 42px;
+        top: 50%;
+
+        width: 146px;
+        height: 146px;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        transform: translateY(-50%);
+      }
+    }
+
+    &--canal {
+      &::before {
+        background-image: url('../../images/icons/canal.svg');
+      }
+    }
+
+    &--assortiment {
+      &::before {
+        background-image: url('../../images/icons/assortiment.svg');
+      }
+    }
+
+    &--employ {
+      &::before {
+        background-image: url('../../images/icons/employ.svg');
+      }
+    }
+
+    &--pay {
+      &::before {
+        background-image: url('../../images/icons/pay.svg');
+      }
+    }
+  }
+
+  &__img {
+    width: 519px;
+    height: 211px;
+  }
+
+  &__box-content {
+    max-width: 332px;
+  }
+
+  &__box-title {
+    margin: 28px 0;
+
+    @extend %osw-500;
+    font-size: 36px;
+  }
+
+
+
+  &__item {
+    position: relative;
+
+    padding-left: 20px;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      left: 4px;
+      top: 8px;
+
+      width: 6px;
+      height: 6px;
+
+      border-radius: 50%;
+      background-color: #006ACC;
+    }
+
+    &+& {
+      margin-top: 10px;
+    }
+  }
+}

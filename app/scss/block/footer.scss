@@ -1,0 +1,26 @@
+.footer {
+  padding: 55px 0 95px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    margin-top: 50px;
+
+    color: #fff;
+
+    p+p {
+      margin-top: 10px;
+    }
+
+    p:first-child {
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.brand {
+  padding-bottom: 100px;
+
+  &__subtitle {
+    margin-bottom: 55px;
+
+    text-align: center;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 21px;
+  }
+
+  &__item {
+    transition: transform .3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

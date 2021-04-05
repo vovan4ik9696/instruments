@@ -1,0 +1,35 @@
+.title {
+  text-align: center;
+
+  &__body {
+    position: relative;
+
+    display: inline-block;
+
+    @extend %osw-500;
+    font-size: 48px;
+
+    &::before,
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+
+      width: calc((1240px - 100% - 120px) / 2);
+      height: 1px;
+
+      background-color: #E5E5E5;
+
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      left: calc(100% + 40px);
+    }
+
+    &::after {
+      right: calc(100% + 40px);
+    }
+  }
+}

@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  @extend %rob-400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $text;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  &__svg {
+    width: 204px;
+    height: 76px;
+  }
+}
+
+.accent {
+  font-weight: 700;
+}

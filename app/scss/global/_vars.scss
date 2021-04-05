@@ -1,0 +1,24 @@
+$text: #113255;
+
+%rob-400 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+%rob-700 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+%osw-500 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+
+%link-action {
+  transition: all .3s;
+
+  &:hover {
+    color: #5165d5;
+  }
+}

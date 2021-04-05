@@ -1,0 +1,40 @@
+.menu {
+  font-size: 18px;
+
+  &--footer {
+    margin: 22px 0 85px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &+& {
+      margin-left: 35px;
+    }
+  }
+
+  &__link {
+    position: relative;
+
+    color: #fff;
+    @extend %link-action;
+
+    &--active {
+      &::after {
+        content: '';
+
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+
+        width: 50%;
+        height: 2px;
+
+        background-color: #006ACC;
+        pointer-events: none;
+      }
+    }
+  }
+}

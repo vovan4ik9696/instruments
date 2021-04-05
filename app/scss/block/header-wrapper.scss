@@ -1,0 +1,45 @@
+.header-wrapper {
+  min-height: 723px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+
+  &__inner {
+    position: relative;
+
+    margin-top: 110px;
+  }
+
+  &__content {
+    max-width: 505px;
+
+    color: #fff;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @extend %osw-500;
+    font-size: 66px;
+    text-transform: uppercase;
+
+    p+p {
+      font-size: 52px;
+    }
+  }
+
+
+  &__img {
+    position: absolute;
+    right: -310px;
+    bottom: -230px;
+
+    width: 100%;
+    img {
+      width: 1009px;
+      height: 629px;
+    }
+  }
+}

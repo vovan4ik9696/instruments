@@ -1,0 +1,100 @@
+.address {
+  display: flex;
+
+  color: #fff;
+  font-style: normal;
+
+  &--block {
+    display: block;
+
+    font-size: 14px;
+
+    .address__contacts {
+      margin-top: 8px;
+    }
+  }
+
+  &--contacts {
+    display: block;
+    padding-left: 40px;
+
+    font-size: 22px;
+
+    .address__item {
+      margin: 0;
+      margin-bottom: 10px;
+
+      color: $text;
+
+      &::before {
+        left: -40px;
+        top: 7px;
+      }
+    }
+
+    .address__contacts {
+      margin: 10px 0 50px;
+
+      .address__item {
+        @extend %link-action;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    color: #fff;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      left: -28px;
+      top: 3px;
+    }
+
+    &--location {
+      max-width: 202px;
+      margin-right: 75px;
+
+      &::before {
+        width: 13px;
+        height: 18px;
+
+        background-image: url('../../images/icons/pin.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &--tel {
+      display: block;
+      margin-bottom: 8px;
+
+      @extend %link-action;
+
+      &::before {
+        width: 14px;
+        height: 17px;
+
+        background-image: url('../../images/icons/tel.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &--mail {
+      @extend %link-action;
+
+      &::before {
+        width: 18px;
+        height: 15px;
+
+        background-image: url('../../images/icons/mail.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.certificates {
+  padding: 100px 0 110px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 55px;
+    grid-row-gap: 55px;
+  }
+
+  &__content {
+    width: 261px;
+  }
+
+  &__title {
+    margin-bottom: 26px;
+
+    @extend %osw-500;
+    font-size: 48px;
+  }
+
+  &__text {
+    p+p {
+      margin-top: 33px;
+    }
+  }
+
+  &__item {
+    width: 250px;
+    height: 350px;
+  }
+}

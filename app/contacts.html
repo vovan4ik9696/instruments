@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Инструмент</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="index.html">
+          <svg class="logo__svg">
+            <use xlink:href="images/sprite.svg#logo"></use>
+          </svg>
+        </a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="brand.html">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#">Котнтакты</a>
+            </li>
+          </ul>
+        </nav>
+
+
+      </div>
+    </div>
+  </header>
+
+
+
+  <main class="main">
+
+    <div class="breadcrumbers">
+      <div class="container">
+        <ul class="breadcrumbers__list">
+          <li class="breadcrumbers__item">
+            <a class="breadcrumbers__link" href="index.html">Главаная</a>
+          </li>
+          <li class="breadcrumbers__item">
+            <span class="breadcrumbers__link breadcrumbers__link--active">Контакты</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <div class="container">
+        <div class="contacts__title title">
+          <h2 class="title__body">
+            Контакты
+          </h2>
+        </div>
+
+        <div class="contacts__inner">
+          <div class="contacts__address">
+            <address class="address address--contacts">
+              <span class="address__item address__item--location">г. Краснодар, ул. Византийская 9 (оф35)</span>
+              <div class="address__contacts">
+                <a class="address__item address__item--tel" href="tel:79892640291">+7 (989) 264-02-91</a>
+                <a class="address__item address__item--mail" href="mailto:vovaeremaa@yandex.ru">vovaeremaa@yandex.ru</a>
+              </div>
+            </address>
+
+            <div class="contacts__organization">
+              <p>ООО «Краснодарская Промышленная Компания»</p>
+              <p>ИНН 124125125</p>
+              <p>КПП 1353215135</p>
+              <p>ОГРН 235235235235</p>
+              <p>ОКПО 235231424</p>
+            </div>
+          </div>
+
+          <div class="contacts__form-wrapper">
+            <h3 class="contacts__form-title">Оставьте заявку</h3>
+            <form class="contacts__form" id="form" action="#">
+              <input class="contacts__input req" type="text" name="name" id="formName" placeholder="Ваше имя*">
+              <input class="contacts__input req" type="tel" name="phone" id="formPhone" placeholder="Ваш телефон*">
+              <input class="contacts__input" type="email" name="mail" id="formMail" placeholder="Email">
+              <textarea class="contacts__input contacts__input--message" name="message" id="formMessage"
+                placeholder="Комментарий"></textarea>
+              <button class="contacts__btn" type="submit">Отправить</button>
+              <div class="contacts__agreement">
+                <label class="contacts__label" for="formAgreement">
+                  <input class="contacts__checkbox req" type="checkbox" name="agreement" id="formAgreement">
+                  <span class="contacts__modify"></span>
+                  Нажимая кнопку "отправить", я соглашаюсь на обработку моей персональной информации на условиях,
+                  определенных <a href="#">Политикой конфиденциальности</a> и с <a href="#">политикой</a> в отношении
+                  обработки персональных данных.
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8327ca862bf6c5904f62ed310e701ae736ebfb3374fef505440e63d3e3de2fad&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=false">
+    </script>
+
+  </main>
+
+  <footer class="footer" style="background-image: url('images/footer-bg.jpg');">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__details">
+          <a class="logo" href="index.html">
+            <svg class="logo__svg">
+              <use xlink:href="images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+
+          <div class="footer__text">
+            <p>ООО «Краснодарская Промышленная Компания»</p>
+            <p>ИНН 23456783</p>
+            <p>КПП 23456783</p>
+            <p>ОГРН 234567832313</p>
+            <p>ОКПО 23456783</p>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <nav class="menu menu--footer">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="brand.html">Каталог</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="#">Котнтакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="address address--block">
+            <span class="address__item address__item--location">г. Краснодар, ул. Византийская 9 (оф35)</span>
+            <div class="address__contacts">
+              <a class="address__item address__item--tel" href="tel:79892640291">+7 (989) 264-02-91</a>
+              <a class="address__item address__item--mail" href="mailto:vovaeremaa@yandex.ru">vovaeremaa@yandex.ru</a>
+            </div>
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
